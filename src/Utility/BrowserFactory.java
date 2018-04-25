@@ -14,11 +14,12 @@ public class BrowserFactory
 		
 		if(browserName.equalsIgnoreCase("firefox"))
 		{
+			System.setProperty("webdriver.gecko.driver","D:\\WorkingFolder\\Setups\\Selenium\\geckodriver-v0.19.1-win32\\geckodriver.exe");
 			driver=new FirefoxDriver();
 		}
 		else if(browserName.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver","G:\\Syam\\BrowserDrivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","D:\\WorkingFolder\\Setups\\Selenium\\chromedriver_win32\\chromedriver.exe");
 			driver=new ChromeDriver();
 		}
 		else if(browserName.equalsIgnoreCase("IE"))
